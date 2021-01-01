@@ -13,3 +13,5 @@ llvm_add_library(LLVMTableGenGlobalISel STATIC DISABLE_LLVM_LINK_LLVM_DYLIB
                  GIMatchDagPredicateDependencyEdge.cpp
                  GIMatchTree.cpp
                 )
+
+set_target_properties(LLVMTableGenGlobalISel PROPERTIES FOLDER "LLVM")

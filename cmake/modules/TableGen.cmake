@@ -131,7 +131,7 @@ function(add_public_tablegen_target target)
   if(LLVM_COMMON_DEPENDS)
     add_dependencies(${target} ${LLVM_COMMON_DEPENDS})
   endif()
-  set_target_properties(${target} PROPERTIES FOLDER "Tablegenning")
+  set_target_properties(${target} PROPERTIES FOLDER "LLVM/Tablegenning")
   set(LLVM_COMMON_DEPENDS ${LLVM_COMMON_DEPENDS} ${target} PARENT_SCOPE)
 endfunction()
 

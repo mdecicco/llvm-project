@@ -7,8 +7,11 @@ endif()
 
 function(llvm_distribution_add_targets)
   add_custom_target(distribution)
+  set_target_properties(distribution PROPERTIES FOLDER "LLVM")
   add_custom_target(install-distribution)
+  set_target_properties(install-distribution PROPERTIES FOLDER "LLVM")
   add_custom_target(install-distribution-stripped)
+  set_target_properties(install-distribution-stripped PROPERTIES FOLDER "LLVM")
 
   foreach(target ${LLVM_DISTRIBUTION_COMPONENTS}
       ${LLVM_RUNTIME_DISTRIBUTION_COMPONENTS})
